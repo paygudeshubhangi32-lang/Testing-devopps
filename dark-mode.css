@@ -1,0 +1,181 @@
+/* =====================================================
+   Dark Mode Overrides
+   Uses Bootstrap 5.3 native data-bs-theme attribute
+   ===================================================== */
+
+[data-bs-theme="dark"] {
+    /* Override CSS custom properties */
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-card: #1e293b;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --border-color: #334155;
+    --border-light: #1e293b;
+    
+    /* Glass overrides */
+    --glass-bg: rgba(15, 23, 42, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    
+    /* Shadow overrides */
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.3);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.3);
+    --shadow-xl: 0 20px 25px rgba(0,0,0,0.4);
+}
+
+/* Navbar */
+[data-bs-theme="dark"] .glass-navbar {
+    background: rgba(15, 23, 42, 0.9) !important;
+    border-bottom-color: rgba(255,255,255,0.06);
+}
+
+/* Cards */
+[data-bs-theme="dark"] .card {
+    background: var(--bg-card);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .feature-card {
+    background: var(--bg-card);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .feature-card:hover {
+    border-color: var(--primary-light);
+}
+
+/* Forms */
+[data-bs-theme="dark"] .form-control,
+[data-bs-theme="dark"] .form-select {
+    background-color: #0f172a;
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-bs-theme="dark"] .form-control:focus,
+[data-bs-theme="dark"] .form-select:focus {
+    background-color: #0f172a;
+    border-color: var(--primary);
+}
+
+[data-bs-theme="dark"] .form-floating > label {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .input-group-text {
+    background: #0f172a;
+    border-color: var(--border-color);
+    color: var(--text-muted);
+}
+
+/* Tables */
+[data-bs-theme="dark"] .table {
+    color: var(--text-primary);
+}
+
+[data-bs-theme="dark"] .table thead th {
+    border-bottom-color: var(--border-color);
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .table tbody td {
+    border-bottom-color: rgba(255,255,255,0.05);
+}
+
+[data-bs-theme="dark"] .table tbody tr:hover {
+    background: rgba(79, 70, 229, 0.08);
+}
+
+/* Modals */
+[data-bs-theme="dark"] .modal-content {
+    background: var(--bg-card);
+}
+
+[data-bs-theme="dark"] .modal-header,
+[data-bs-theme="dark"] .modal-footer {
+    border-color: var(--border-color);
+}
+
+/* Dropdown */
+[data-bs-theme="dark"] .dropdown-menu {
+    background: #1e293b;
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .dropdown-item {
+    color: var(--text-secondary);
+}
+
+[data-bs-theme="dark"] .dropdown-item:hover {
+    background: rgba(79, 70, 229, 0.15);
+    color: var(--text-primary);
+}
+
+/* Accordion */
+[data-bs-theme="dark"] .accordion-item {
+    background: var(--bg-card);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .accordion-button {
+    background: var(--bg-card);
+    color: var(--text-primary);
+}
+
+[data-bs-theme="dark"] .accordion-button:not(.collapsed) {
+    background: rgba(79, 70, 229, 0.1);
+    color: var(--primary-light);
+}
+
+/* Contact Card */
+[data-bs-theme="dark"] .contact-info-card {
+    background: var(--bg-card);
+    border-color: var(--border-color);
+}
+
+/* Btn Icon */
+[data-bs-theme="dark"] .btn-icon {
+    background: var(--bg-card);
+    border-color: var(--border-color);
+    color: var(--text-secondary);
+}
+
+/* Footer - no changes needed (already dark) */
+
+/* Scrollbar */
+[data-bs-theme="dark"] ::-webkit-scrollbar {
+    width: 8px;
+}
+
+[data-bs-theme="dark"] ::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+[data-bs-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+[data-bs-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
+
+/* DataTables dark mode */
+[data-bs-theme="dark"] .dataTables_wrapper .dataTables_length select,
+[data-bs-theme="dark"] .dataTables_wrapper .dataTables_filter input {
+    background: #0f172a;
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-bs-theme="dark"] .dataTables_wrapper .dataTables_info,
+[data-bs-theme="dark"] .dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: var(--text-secondary) !important;
+}
+
+/* Page Background */
+[data-bs-theme="dark"] .page-loader {
+    background: #0f172a;
+}

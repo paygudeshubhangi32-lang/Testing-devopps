@@ -1,0 +1,29 @@
+[16-Jul-2026 11:32:18 Asia/Kolkata] Database Connection Error: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[16-Jul-2026 11:32:18 Asia/Kolkata] Database Creation Error: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[16-Jul-2026 11:34:13 Asia/Kolkata] Database Connection Error: SQLSTATE[HY000] [1049] Unknown database 'attendance_db'
+[16-Jul-2026 11:34:14 Asia/Kolkata] Database initialized successfully.
+[16-Jul-2026 11:34:14 Asia/Kolkata] Database initialized successfully.
+[16-Jul-2026 11:34:14 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'attendance_db.users' doesn't exist in C:\xampp\htdocs\shubhangi\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\shubhangi\config\database.php(74): PDO->prepare('SELECT username...')
+#1 C:\xampp\htdocs\shubhangi\config\database.php(96): dbQuery('SELECT username...', Array)
+#2 C:\xampp\htdocs\shubhangi\test_db.php(3): dbFetchOne('SELECT username...')
+#3 {main}
+  thrown in C:\xampp\htdocs\shubhangi\config\database.php on line 74
+[16-Jul-2026 11:34:18 Asia/Kolkata] Database initialized successfully.
+[16-Jul-2026 11:34:18 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'attendance_db.users' doesn't exist in C:\xampp\htdocs\shubhangi\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\shubhangi\config\database.php(74): PDO->prepare('SELECT username...')
+#1 C:\xampp\htdocs\shubhangi\config\database.php(96): dbQuery('SELECT username...', Array)
+#2 C:\xampp\htdocs\shubhangi\test_db.php(3): dbFetchOne('SELECT username...')
+#3 {main}
+  thrown in C:\xampp\htdocs\shubhangi\config\database.php on line 74
+[16-Jul-2026 13:33:45 Asia/Kolkata] Database initialized successfully.
+[16-Jul-2026 13:33:45 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'attendance_db.users' doesn't exist in C:\xampp\htdocs\shubhangi\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\shubhangi\config\database.php(74): PDO->prepare('SELECT username...')
+#1 C:\xampp\htdocs\shubhangi\config\database.php(96): dbQuery('SELECT username...', Array)
+#2 C:\xampp\htdocs\shubhangi\test_db.php(3): dbFetchOne('SELECT username...')
+#3 {main}
+  thrown in C:\xampp\htdocs\shubhangi\config\database.php on line 74
+[16-Jul-2026 13:35:18 Asia/Kolkata] Database initialized successfully.
